@@ -5,24 +5,36 @@
     @include displayFlex();
   }
 
-  &__icon {
-    display: block;
-  }
-
   &__item {
     width: calc((100% - 90px) / 4);
+
+    &:nth-child(1)::before {
+      background-image: url(../../pictures/icons/antenna.svg);
+    }
+
+    &:nth-child(2)::before {
+      background-image: url(../../pictures/icons/clock.svg);
+    }
+    &:nth-child(3)::before {
+      background-image: url(../../pictures/icons/diagram.svg);
+    }
+    &:nth-child(4)::before {
+      background-image: url(../../pictures/icons/astronaut.svg);
+    }
   }
 
-  &__thumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  &__item::before {
+    content: '';
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center;
+
     margin-bottom: 30px;
     background-color: $secondary-bg-color;
     border-radius: 4px;
     width: 270px;
     height: 120px;
-    /* outline: 1px solid red; */
+    // outline: 1px solid red;
   }
 
   &__list-title {

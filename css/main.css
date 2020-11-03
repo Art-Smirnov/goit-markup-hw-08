@@ -235,24 +235,36 @@ textarea {
   align-items: center;
 }
 
-.features__icon {
-  display: block;
-}
-
 .features__item {
   width: calc((100% - 90px) / 4);
 }
 
-.features__thumb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.features__item:nth-child(1)::before {
+  background-image: url(../../pictures/icons/antenna.svg);
+}
+
+.features__item:nth-child(2)::before {
+  background-image: url(../../pictures/icons/clock.svg);
+}
+
+.features__item:nth-child(3)::before {
+  background-image: url(../../pictures/icons/diagram.svg);
+}
+
+.features__item:nth-child(4)::before {
+  background-image: url(../../pictures/icons/astronaut.svg);
+}
+
+.features__item::before {
+  content: '';
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: center;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
   width: 270px;
   height: 120px;
-  /* outline: 1px solid red; */
 }
 
 .features__list-title {
