@@ -1,0 +1,28 @@
+.button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  color: $title-text-color;
+  background-color: $secondary-bg-color;
+
+  border-color: transparent;
+  font-family: inherit;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  transition: color 250ms $timing-function,
+    background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+    border-color: transparent;
+    cursor: pointer;
+  }
+}

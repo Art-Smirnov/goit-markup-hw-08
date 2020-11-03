@@ -1,0 +1,5 @@
+@mixin displayFlex($type: flex, $horisontal: space-between, $vertical: center) {
+  display: $type;
+  justify-content: $horisontal;
+  align-items: $vertical;
+}

@@ -1,0 +1,19 @@
+.activity-list__overlay {
+  @include displayFlex($horisontal: center);
+  bottom: 0;
+
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+
+  width: 370px;
+  height: 70px;
+}
+
+.activity-list__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}

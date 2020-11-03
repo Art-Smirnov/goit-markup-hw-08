@@ -1,0 +1,67 @@
+.team {
+  @include displayFlex();
+
+  &__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: $title-text-color;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+
+  &__info {
+    padding-top: 30px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+
+    background: $primary-white-color;
+  }
+}
+
+.networks {
+  @include displayFlex($horisontal: space-between);
+
+  &__link {
+    @include displayFlex($horisontal: center);
+
+    color: $icon-color;
+
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+
+    transition: background-color 250ms $timing-function,
+      color 250ms $timing-function;
+
+    &:hover,
+    &:hover {
+      color: $primary-white-color;
+      background-color: $accent-color;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

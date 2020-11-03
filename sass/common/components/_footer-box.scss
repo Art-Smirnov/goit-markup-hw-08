@@ -1,0 +1,3 @@
+.footer__box {
+  @include displayFlex($vertical: baseline);
+}
