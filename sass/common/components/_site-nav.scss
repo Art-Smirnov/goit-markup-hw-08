@@ -1,14 +1,22 @@
 .site-nav {
-  &__nav-list {
-    display: flex;
-    margin-left: 93px;
-  }
+  @media screen and (min-width: $tablet) {
+    &__nav-list {
+      display: flex;
+      margin-left: 88px;
+    }
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    &__nav-list {
+      margin-left: 93px;
+    }
   }
 
   &__link {
+    display: inline-block;
     position: relative;
     padding-top: 34.5px;
     padding-bottom: 33.5px;

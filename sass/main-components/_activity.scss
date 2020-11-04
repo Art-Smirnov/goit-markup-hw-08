@@ -1,8 +1,0 @@
-.activity-list {
-  @include displayFlex();
-
-  &__item {
-    position: relative;
-    width: 370px;
-  }
-}
