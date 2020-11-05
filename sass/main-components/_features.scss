@@ -1,11 +1,12 @@
 .features {
-  padding-bottom: 0px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0;
+  }
 
-  &__item::before {
-    content: '';
-    background-repeat: no-repeat;
-    display: inline-block;
-    background-position: center;
+  &__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     padding-bottom: 25px;
     padding-top: 25px;
@@ -31,20 +32,6 @@
 
   &__item {
     width: 100%;
-
-    &:nth-child(1)::before {
-      background-image: url(../../pictures/icons/antenna.svg);
-    }
-
-    &:nth-child(2)::before {
-      background-image: url(../../pictures/icons/clock.svg);
-    }
-    &:nth-child(3)::before {
-      background-image: url(../../pictures/icons/diagram.svg);
-    }
-    &:nth-child(4)::before {
-      background-image: url(../../pictures/icons/astronaut.svg);
-    }
 
     &:not(:last-child) {
       @media screen and (max-width: $max-tablet) {

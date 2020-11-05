@@ -4,7 +4,8 @@
   min-width: 200px;
 
   color: $title-text-color;
-  background-color: $secondary-bg-color;
+  background-color: $accent-color;
+  color: $primary-white-color;
 
   border-color: transparent;
   font-family: inherit;
@@ -20,8 +21,8 @@
 
   &:hover,
   &:focus {
-    color: $primary-white-color;
-    background-color: $accent-color;
+    background-color: $secondary-bg-color;
+    color: $title-text-color;
     border-color: transparent;
     cursor: pointer;
   }

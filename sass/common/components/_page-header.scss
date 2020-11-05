@@ -1,14 +1,53 @@
 .page-header {
+  position: relative;
+
   @media screen and (max-width: $tablet) {
     padding-bottom: 16px;
     padding-top: 16px;
   }
-  // @media screen and (min-width: $tablet) {
-  //   padding-bottom: 21px;
-  //   padding-top: 21px;
-  // }
 
   &--border-bottom {
     border-bottom: 1px solid #ececec;
   }
+}
+.menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &__close {
+    display: none;
+  }
+
+  &--is-open &__close {
+    display: block;
+  }
+  &--is-open &__menu {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+
+  &--is-open {
+    display: block;
+  }
+
+  @extend .section;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: $primary-white-color;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
 }

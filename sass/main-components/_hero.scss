@@ -10,14 +10,12 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../pictures/bg-img/bg-Img.jpg);
+    url(../pictures/bg-img/mob-bg-Img.jpg);
 
   background-color: $third-bg-color;
   background-position: center;
-  background-size: 480px;
-  background-repeat: no-repeat;
 
-  max-width: 1600px;
+  max-width: 480px;
   height: 400px;
   /* outline: 1px solid black; */
 
@@ -32,5 +30,37 @@
     line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../pictures/bg-img/tab-bg-Img.jpg);
+
+    max-width: 768px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../pictures/bg-img/bg-img.jpg);
+
+    max-width: 1600px;
+    height: 600px;
   }
 }

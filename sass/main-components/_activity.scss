@@ -1,0 +1,14 @@
+.activity {
+  @media screen and (max-width: $max-desktop) {
+    display: none;
+  }
+}
+
+.activity-list {
+  @include displayFlex();
+
+  &__item {
+    position: relative;
+    width: 370;
+  }
+}

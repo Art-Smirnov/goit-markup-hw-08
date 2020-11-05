@@ -1,4 +1,6 @@
 .page-header__container {
+  @include displayFlex();
+
   @media screen and (min-width: $tablet) {
     @include displayFlex();
   }
