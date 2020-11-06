@@ -1,0 +1,47 @@
+.policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  // font-size: 14px;
+  // line-height: 1.71;
+
+  &__label {
+    margin-left: 8.38px;
+  }
+
+  &__checkbox {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 2px;
+
+    .policy__checkbox:checked + & {
+      border-color: $accent-color;
+      background-color: $accent-color;
+      background-image: url(../pictures/icons/icon-check.svg);
+      background-origin: border-box;
+      /* background-size: contain; */
+    }
+  }
+
+  &__link {
+    color: $accent-color;
+  }
+}
