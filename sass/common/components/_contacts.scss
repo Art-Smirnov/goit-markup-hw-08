@@ -1,8 +1,8 @@
 .contacts {
   &__mail,
   &__tel {
-    display: inline-flex;
-    align-items: center;
+    // display: inline-flex;
+    // align-items: center;
     color: $primary-text-color;
 
     text-decoration: none;
@@ -14,6 +14,9 @@
       color: $accent-color;
     }
   }
+  height: 40px;
+  width: 50px;
+  outline: 1px solid orange;
 
   &__icon {
     margin-right: 10px;
@@ -53,7 +56,7 @@
   }
 }
 
-.page-header__contacts {
+.menu-container__contacts {
   @media screen and (min-width: $desktop) {
     @include displayFlex();
   }

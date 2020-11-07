@@ -1,10 +1,13 @@
 .site-nav {
   &__nav-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 155px;
-    margin-bottom: 60px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // height: 155px;
+    // margin-bottom: 60px;
+    height: 40px;
+    width: 50px;
+    outline: 1px solid teal;
   }
 
   @media screen and (min-width: $tablet) {
