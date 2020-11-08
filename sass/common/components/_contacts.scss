@@ -1,8 +1,8 @@
 .contacts {
   &__mail,
   &__tel {
-    // display: inline-flex;
-    // align-items: center;
+    display: inline-flex;
+    align-items: center;
     color: $primary-text-color;
 
     text-decoration: none;
@@ -14,36 +14,53 @@
       color: $accent-color;
     }
   }
-  height: 40px;
-  width: 50px;
-  outline: 1px solid orange;
+
+  // outline: 1px solid orange;
 
   &__icon {
     margin-right: 10px;
     fill: currentColor;
+
+    &--mail {
+      width: 17px;
+      height: 16px;
+    }
+
+    &--phone {
+      width: 19px;
+      height: 17px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $max-desktop) {
+      &--mail {
+        width: 16px;
+        height: 14px;
+      }
+
+      &--phone {
+        width: 15px;
+        height: 16px;
+      }
+    }
   }
 
-  &__item + &__item {
-    margin-top: 16px;
+  @media screen and (max-width: $max-tablet) {
+    &__item + &__item {
+      margin-top: 16px;
+    }
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $max-desktop) {
     font-size: 12px;
-    line-height: 1.66;
+    line-height: 1.16;
 
     &__icon {
-      margin-right: 10px;
+      margin-right: 8px;
       fill: currentColor;
     }
 
     &__item + &__item {
       margin-top: 10px;
-    }
-
-    @media screen and (max-width: $desktop) {
-      &__item + &__item {
-        margin-top: 10px;
-      }
     }
   }
 
@@ -60,6 +77,4 @@
   @media screen and (min-width: $desktop) {
     @include displayFlex();
   }
-
-  // margin-left: auto;
 }

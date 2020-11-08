@@ -1,29 +1,17 @@
 .site-nav {
   &__nav-list {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    // height: 155px;
-    // margin-bottom: 60px;
-    height: 40px;
-    width: 50px;
-    outline: 1px solid teal;
+    @include displayFlex();
+
+    @media screen and (max-width: $max-tablet) {
+      flex-direction: column;
+      height: 155px;
+      margin-bottom: 60px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
-    &__nav-list {
-      display: flex;
-      margin-left: 88px;
-    }
-
     &__item:not(:last-child) {
       margin-right: 50px;
-    }
-  }
-
-  @media screen and (min-width: $desktop) {
-    &__nav-list {
-      margin-left: 93px;
     }
   }
 
@@ -31,17 +19,8 @@
     display: inline-block;
     position: relative;
 
-    &:not(:first-child) {
-      padding-top: 8px;
-    }
-    &:not(:last-child) {
-      padding-bottom: 8px;
-    }
-
     color: $title-text-color;
-
     text-decoration: none;
-
     transition: color 250ms $timing-function;
 
     &:hover,
@@ -65,6 +44,12 @@
       border-radius: 2px;
 
       transition: opacity 250ms $timing-function;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    &__link {
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
   }
 }
