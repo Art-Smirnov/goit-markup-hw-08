@@ -24,12 +24,9 @@
   color: $title-text-color;
 
   text-align: center;
-
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: 1.18;
-  }
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
