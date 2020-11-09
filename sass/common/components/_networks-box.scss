@@ -1,0 +1,46 @@
+.networks-box {
+  &__title {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: $primary-white-color;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    @include displayFlex($horisontal: center);
+
+    @media screen and (max-width: $max-desktop) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__icon {
+    fill: $primary-white-color;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    @include displayFlex($horisontal: center);
+    height: 44px;
+    width: 44px;
+
+    $networks-bg-color: rgba(255, 255, 255, 0.1);
+    background-color: $networks-bg-color;
+
+    border-radius: 50%;
+
+    transition: background-color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+}

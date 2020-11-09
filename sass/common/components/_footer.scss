@@ -1,0 +1,95 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &--dark-bg {
+    background-color: $third-bg-color;
+  }
+
+  &__box {
+    @media screen and (max-width: $max-desktop) {
+      text-align: center;
+    }
+    @media screen and (min-width: $desktop) {
+      @include displayFlex($vertical: baseline);
+    }
+  }
+
+  &__tablet-box {
+    @media screen and (min-width: $tablet) {
+      @include displayFlex($horisontal: space-around, $vertical: start);
+    }
+    @media screen and (min-width: $desktop) {
+      align-items: baseline;
+    }
+  }
+
+  &__subscribe-box {
+    margin-left: auto;
+  }
+}
+
+.subscribe-box {
+  &__title {
+    @extend .networks-box__title;
+  }
+
+  @media screen and (min-width: $desktop) {
+    &__form {
+      display: flex;
+    }
+  }
+
+  &__input {
+    display: block;
+    max-width: 450px;
+    width: 100%;
+    padding: 15px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: inherit;
+
+    font-size: 16px;
+    line-height: 1.25;
+
+    &:focus {
+      outline-color: $accent-color;
+      background-color: $third-bg-color;
+      color: $primary-white-color;
+      border: 1px solid $accent-color;
+    }
+
+    @media screen and (max-width: $max-desktop) {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 12px;
+      width: 358px;
+    }
+  }
+}
+
+.footer-btn {
+  @extend .button;
+
+  @include displayFlex($type: inline-flex);
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  &:hover,
+  &:focus {
+    fill: currentColor;
+    color: $title-text-color;
+    background-color: $secondary-bg-color;
+    cursor: pointer;
+  }
+  &__icon {
+    fill: currentColor;
+  }
+  &__label {
+    margin-right: 10px;
+  }
+}

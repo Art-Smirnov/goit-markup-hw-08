@@ -1,0 +1,9 @@
+.contacts-box {
+  @media screen and (max-width: $max-desktop) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
+}
