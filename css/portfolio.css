@@ -419,7 +419,7 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
-  .filter__item:not(:last-child):not(:nth-child(n + 2)) {
+  .filter__item:not(:nth-child(n + 4)) {
     margin-bottom: 15px;
   }
 }
