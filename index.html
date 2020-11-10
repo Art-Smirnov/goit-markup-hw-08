@@ -179,6 +179,8 @@
                 />
 
                 <img
+                  width="370"
+                  height="294"
                   srcset="
                     ./pictures/img/programer-370.jpg 1x,
                     ./pictures/img/programer-740.jpg 2x
@@ -202,6 +204,8 @@
                 />
 
                 <img
+                  width="370"
+                  height="294"
                   srcset="
                     ./pictures/img/designer-370.jpg  1x,
                     ./pictures/img/designert-740.jpg 2x
@@ -225,6 +229,8 @@
                 />
 
                 <img
+                  width="370"
+                  height="294"
                   srcset="
                     ./pictures/img/creative-artist-370.jpg 1x,
                     ./pictures/img/creative-artist-740.jpg 2x
@@ -631,6 +637,7 @@
                   class="clients-list__link"
                   target="_blank"
                   rel="noopener noreferer"
+                  aria-label="Ссылка клиентов"
                   href="#"
                 >
                   <svg
@@ -652,6 +659,7 @@
                   class="clients-list__link"
                   target="_blank"
                   rel="noopener noreferer"
+                  aria-label="Ссылка клиентов"
                   href="#"
                 >
                   <svg
@@ -673,6 +681,7 @@
                   class="clients-list__link"
                   target="_blank"
                   rel="noopener noreferer"
+                  aria-label="Ссылка клиентов"
                   href="#"
                 >
                   <svg
@@ -694,6 +703,7 @@
                   class="clients-list__link"
                   target="_blank"
                   rel="noopener noreferer"
+                  aria-label="Ссылка клиентов"
                   href="#"
                 >
                   <svg class="clients-list__icon" width="170" height="90">
@@ -711,6 +721,7 @@
                   class="clients-list__link"
                   target="_blank"
                   rel="noopener noreferer"
+                  aria-label="Ссылка клиентов"
                   href="#"
                 >
                   <svg
@@ -732,6 +743,7 @@
                   class="clients-list__link"
                   target="_blank"
                   rel="noopener noreferer"
+                  aria-label="Ссылка клиентов"
                   href="#"
                 >
                   <svg class="clients-list__icon" width="170" height="90">
@@ -853,12 +865,13 @@
         <div class="subscribe-box footer__subscribe-box">
           <b class="subscribe-box__title">Подпишитесь на рассылку</b>
           <form class="subscribe-box__form">
-            <input
-              class="subscribe-box__input"
-              type="email"
-              name="mail"
-              placeholder="E-mail"
-            />
+            <label
+              ><input
+                class="subscribe-box__input"
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+            /></label>
             <button class="footer-btn">
               <span class="footer-btn__label">Подписаться</span>
               <svg class="footer-btn__icon" width="24" height="24">
@@ -876,7 +889,11 @@
 
     <div data-modal class="backdrop backdrop--hidden">
       <div class="modal">
-        <button class="close-modal-btn" data-modal-close>
+        <button
+          class="close-modal-btn"
+          aria-label="Кнопка закрыть"
+          data-modal-close
+        >
           <svg class="close-modal-btn__icon" width="11" height="11">
             <use href="./pictures/icons/icomoon/sprite.svg#icon-close"></use>
           </svg>
