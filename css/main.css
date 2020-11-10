@@ -423,7 +423,7 @@ textarea {
 
 @media screen and (min-width: 769px) {
   .hero {
-    max-width: 1200px;
+    max-width: 1600px;
     height: 600px;
   }
 }
@@ -473,7 +473,7 @@ textarea {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
