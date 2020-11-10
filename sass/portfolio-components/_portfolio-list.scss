@@ -8,7 +8,7 @@
 .portfolio-list__card {
   margin-right: 30px;
   margin-bottom: 30px;
-  width: calc((100% - 30px) / 2);
+  max-width: calc((100% - 30px) / 2);
 
   @media screen and (max-width: $max-desktop) {
     &:nth-child(2n) {
@@ -21,7 +21,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    width: calc((100% - 60px) / 3);
+    max-width: calc((100% - 60px) / 3);
 
     &:nth-child(3n) {
       margin-right: 0;

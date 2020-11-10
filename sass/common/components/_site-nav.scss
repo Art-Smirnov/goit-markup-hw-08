@@ -34,7 +34,7 @@
 
     &.current::after {
       position: absolute;
-      bottom: 0;
+      bottom: -8px;
       content: '';
       display: block;
 
@@ -44,8 +44,13 @@
       border-radius: 2px;
 
       transition: opacity 250ms $timing-function;
+
+      @media screen and (min-width: $tablet) {
+        bottom: 0px;
+      }
     }
   }
+
   @media screen and (min-width: $tablet) {
     &__link {
       padding-top: 32px;

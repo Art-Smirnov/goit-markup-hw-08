@@ -4,34 +4,62 @@
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+  max-width: 480px;
+  height: 400px;
+
+  @media screen and (min-width: $min-mobile) {
+    max-width: 768px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: $min-tablet) {
+    max-width: 1200px;
+    height: 600px;
+  }
 
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../pictures/bg-img/mob-bg-Img.jpg);
+    url(../../pictures/bg-img/bg-img-mob-480.jpg);
 
   background-color: $third-bg-color;
   background-position: center;
+  background-size: 480px 400px;
 
-  max-width: 480px;
-  height: 400px;
-  /* outline: 1px solid black; */
-
-  @media screen and (min-width: $tablet) {
+  @media (min-resolution: 2dppx) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../pictures/bg-img/tab-bg-Img.jpg);
-
-    max-width: 768px;
-    height: 400px;
+      url(../../pictures/bg-img/bg-img-mob-960.jpg);
   }
 
-  @media screen and (min-width: $desktop) {
+  /* outline: 1px solid black; */
+
+  @media screen and (min-width: $min-mobile) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../pictures/bg-img/tab-bg-img-768.jpg);
+
+    background-size: 768px 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../pictures/bg-img/tab-bg-img-1536.jpg);
+    }
+  }
+
+  @media screen and (min-width: $min-tablet) {
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -40,10 +68,18 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../pictures/bg-img/bg-img.jpg);
+      url(../../pictures/bg-img/bg-img-desk-1600.jpg);
 
-    max-width: 1600px;
-    height: 600px;
+    background-size: 1600px 600px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../pictures/bg-img/bg-img-desk-3200.jpg);
+    }
   }
 
   &__title {
