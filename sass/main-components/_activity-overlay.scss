@@ -1,8 +1,8 @@
 .activity-list__overlay {
+  position: absolute;
   @include displayFlex($horisontal: center);
   bottom: 0;
 
-  position: absolute;
   background: rgba(47, 48, 58, 0.8);
 
   width: 100%;
