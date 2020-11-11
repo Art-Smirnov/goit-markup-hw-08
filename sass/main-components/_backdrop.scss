@@ -11,13 +11,13 @@
   padding-top: 93px;
   padding-right: 15px;
   padding-left: 15px;
+  overflow-y: scroll;
 
   @media screen and (min-width: $tablet) {
     padding-top: 208px;
     padding-right: 159px;
     padding-left: 159px;
   }
-  overflow-y: scroll;
 
   &--hidden {
     opacity: 0;

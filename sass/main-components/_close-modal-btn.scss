@@ -1,6 +1,9 @@
 .close-modal-btn {
+  position: absolute;
   display: block;
-  margin-left: auto;
+  // margin-left: auto;
+  top: 8px;
+  right: 8px;
   padding: 5px 9px;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);

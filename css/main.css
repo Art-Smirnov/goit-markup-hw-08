@@ -15,6 +15,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -976,7 +980,8 @@ textarea {
 }
 
 .modal {
-  padding: 8px 8px 40px;
+  position: relative;
+  padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1009,14 +1014,6 @@ textarea {
   line-height: 1.5;
 }
 
-@media screen and (max-width: 1199px) {
-  .modal__tittle {
-    width: calc(100% - 80px);
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .modal__tittle {
     font-size: 20px;
@@ -1025,8 +1022,10 @@ textarea {
 }
 
 .close-modal-btn {
+  position: absolute;
   display: block;
-  margin-left: auto;
+  top: 8px;
+  right: 8px;
   padding: 5px 9px;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1052,9 +1051,6 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  width: calc(100% - 80px);
-  margin-left: auto;
-  margin-right: auto;
   /* outline: 1px solid blue; */
 }
 
@@ -1097,11 +1093,6 @@ textarea {
 
 .form__textarea {
   padding: 12px 16px;
-}
-
-.modal__form {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .policy {
